@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Empréstimo</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Calculadora -->
+  <div class="calculator">
+    <h2>Calculadora de Empréstimo</h2>
+    <!-- Valor do Empréstimo -->
+    <div>
+      <label>Valor do empréstimo:</label>
+      <input type="number" id="loanAmount" placeholder="Digite o valor do empréstimo">
+    </div>
+    <!-- Taxa de Juros -->
+    <div>
+      <label>Taxa de juros (%):</label>
+      <input type="number" id="interestRate" placeholder="Digite a taxa de juros">
+    </div>
+    <!-- Prazo -->
+    <div>
+      <label>Prazo (em meses):</label>
+      <input type="number" id="loanTerm" placeholder="Digite o prazo em meses">
+    </div>
+    <!-- Botão Calcular -->
+    <button onclick="calculateLoan()">Calcular</button>
+    <!-- Resultado -->
+    <div id="result">
+      <!-- Juros Mensais -->
+      <p>Juros Mensais: <span id="monthlyInterest"></span></p>
+      <!-- Juros Anuais -->
+      <p>Juros Anuais: <span id="annualInterest"></span></p>
+      <!-- Valor Total -->
+      <p>Valor Total: <span id="totalAmount"></span></p>
+      <!-- Pagamento Mensal -->
+      <p>Pagamento Mensal: <span id="monthlyPayment"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
